@@ -9,11 +9,14 @@ import { CardsProductsComponent } from './pages/components/cards-products/cards-
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
+import { CurrencyCLPPipe } from 'src/app/pipes/currency-clp.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
-    CardsProductsComponent
+    CardsProductsComponent,
+    CurrencyCLPPipe
   ],
   imports: [
     HttpClientModule,

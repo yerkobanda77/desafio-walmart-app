@@ -23,9 +23,9 @@ export class ProductsComponent implements OnInit {
 
   searchProducts(){
     this.hideError();
+    this.products = [];
     this.productsService.getProductsFilters(this.search).subscribe(
       Response => { 
-        console.log("Response: ",Response);
         if(Response.result?.length > 0){          
           this.products = Response.result
         }
