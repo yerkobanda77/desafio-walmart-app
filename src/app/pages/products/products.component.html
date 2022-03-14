@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row" style="margin-bottom: 20px;">
+        <div class="col">
+          </div>
+          <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Buscar Producto" [(ngModel)]="search">
+                        <button class="btn btn-outline-success" type="button" id="button-addon2" (click)="searchProducts()">Buscar</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col">
+          </div>
+    </div>
+    <div *ngIf="displayError" class="alert alert-danger" role="alert" style="margin-bottom: 20px;">
+        {{txtError}}
+    </div>
+    <app-cards-products [products]="products"></app-cards-products>
+</div>

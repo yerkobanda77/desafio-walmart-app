@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-3" *ngFor="let product of products" style="margin-bottom: 10px;">
+            <div class="card">
+                <img src="https://{{product.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{product.brand}}</h5>
+                  <p class="card-text">{{product.description}}</p>
+                  <p class="card-text">{{product.price}} <strong *ngIf="product.discount > 0">{{product.discount}}%</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
