@@ -6,7 +6,7 @@
                 <div class="card-body">
                   <h5 class="card-title">{{product.brand}}</h5>
                   <p class="card-text">{{product.description}}</p>
-                  <p class="card-text">${{product.price | currencyCLP}} <strong *ngIf="product.discount > 0">{{product.discount}}%</strong></p>
+                  <p class="card-text">${{product.price | currencyCLP}} &nbsp;&nbsp;<strong *ngIf="product.discount > 0">{{product.discount}}%</strong></p>
                 </div>
             </div>
         </div>
